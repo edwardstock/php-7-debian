@@ -53,7 +53,6 @@ CONFIGURE_STRING="--prefix=/usr/local/php7 \
                   --with-pdo-mysql=mysqlnd \
                   --with-pdo-pgsql \
                   --with-openssl \
-                  --with-opcache \
                   --enable-pcntl \
                   --with-pspell \
                   --enable-shmop \
