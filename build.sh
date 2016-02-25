@@ -19,7 +19,8 @@ sudo apt-get install -y \
     libjpeg-dev \
     libpng-dev \
     libpspell-dev \
-    libreadline-dev
+    libreadline-dev \
+    postgresql-server-dev-9.4
 
 sudo mkdir /usr/local/php7
 
@@ -50,7 +51,9 @@ CONFIGURE_STRING="--prefix=/usr/local/php7 \
                   --with-mysql-sock=/var/run/mysqld/mysqld.sock \
                   --with-mysqli=mysqlnd \
                   --with-pdo-mysql=mysqlnd \
+                  --with-pdo-pgsql \
                   --with-openssl \
+                  --with-opcache \
                   --enable-pcntl \
                   --with-pspell \
                   --enable-shmop \
